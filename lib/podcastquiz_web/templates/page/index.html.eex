@@ -1,0 +1,8 @@
+<header class ="quizHeader">
+  <div class="wrapper">
+    <h1>Podcast Quiz!</h1>
+    <i class="fas fa-podcast fa-5x"></i>
+    <p>Welcome to the podcast recommendation quiz! Please answer the following questions and the quiz will give you a podcast recommendation!</p>
+    <%= take_quiz_button(@conn) %>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+<div class="wrapper">
+          <!-- second question -->
+        <h3>2. You witness a complete stranger slip and fall on ice. What do you do? </h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :thirdQuestion), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "horror") %>
+            <%= label(f, :genre, "Thats weird...I did not notice the stranger before...") %>
+            <%= radio_button(f, :genre, "comedy") %>
+            <%= label(f, :genre, "You point and laugh..") %>
+            <%= radio_button(f, :genre, "trueCrime") %>
+            <%= label(f, :genre, "You help the stanger, but take note that ice is slippery and harmful...") %>
+            <%= radio_button(f, :genre, "nonFiction") %>
+            <%= label(f, :genre, "You help the stranger and decide to write a letter to the city complaining about not putting salt on the ground.") %>
+            <%= radio_button(f, :genre, "fiction") %>
+            <%= label(f, :genre, "You help the stanger and hope you two become friends.") %>
+            <%= submit("Make next move") %>
+        <% end) %>
+</div>

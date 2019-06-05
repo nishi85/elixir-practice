@@ -1,0 +1,17 @@
+<div class="wrapper">
+          <!-- fifth question -->
+        <h3>5. You start to suspect your new home is haunted... </h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :sixthQuestion), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "horror") %>
+            <%= label(f, :genre, "You initially do nothing. You hear voices telling you to 'get out'. You do nothing. Time has passed and the doors and windows start to open and shut by themselves. You do nothing. You are violently dragged out of your bed by an unkwown force every night. You do nothing. A message is written in blood on the walls warning you to leave. You start to think maybe your place might be a little strange...") %>
+            <%= radio_button(f, :genre, "comedy") %>
+            <%= label(f, :genre, "You call the Ghostbusters, because you think it will be hilarious.") %>
+            <%= radio_button(f, :genre, "trueCrime") %>
+            <%= label(f, :genre, "You start to research the history of your propery and you find a deep, dark, buried secret.You create a scene, because you know it will be the perfect alibi...") %>
+            <%= radio_button(f, :genre, "nonFiction") %>
+            <%= label(f, :genre, "You do nothing, because ghosts are not real. Stop being silly.") %>
+            <%= radio_button(f, :genre, "fiction") %>
+            <%= label(f, :genre, "You call the Ghostbusters, because you think it will be fun.") %>
+            <%= submit("Make next move") %>
+        <% end) %>
+</div>

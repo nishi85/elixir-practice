@@ -1,0 +1,9 @@
+<div class="wrapper">
+        <h3>bill burr's monday morning podcast</h3>
+        <p>comedy</p>
+        <p> "Bill Burr's Monday Morning Podcast is a weekly comedy podcast hosted by Bill Burr. During each one-hour episode, Burr speaks without reservation and off-the-cuff about his past and recent experiences, current events, going on tour, sports, and offers advice to questions submitted by listeners."</p>
+        <p>ongoing: "yes"</p>
+        <p>length: "long"</p>
+        <a href="http://billburr.com/podcast-2/"> Click here to listen</a>
+        <%= take_quiz_button(@conn) %>
+</div>

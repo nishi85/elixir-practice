@@ -1,0 +1,9 @@
+<div class="wrapper">
+        <h3>Serial: Season 1</h3>
+        <p>true crime</p>
+        <p> "Serial is an investigative journalism podcast hosted by Sarah Koenig, narrating a nonfiction story over multiple episodes. Season 1 investigated the 1999 murder of Hae Min Lee, an 18-year-old student at Woodlawn High School in Baltimore, Maryland, U.S."</p>
+        <p>ongoing: "no"</p>
+        <p>length: "long"</p>
+        <a href="https://serialpodcast.org/"> Click here to listen</a>
+        <%= take_quiz_button(@conn) %>
+</div>

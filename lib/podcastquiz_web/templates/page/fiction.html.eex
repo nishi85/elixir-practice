@@ -1,0 +1,9 @@
+<div class="wrapper">
+        <h3>Welcome to Nightvale</h3>
+        <p>fiction</p>
+        <p> "This surreal, fictitious radio show chronicles the goings-on in a nightmarish town called Night Vale. The radio host delivers reports of hooded figures and ghoulish strangers in a perfectly sinister pitch."</p>
+        <p>ongoing: "yes"</p>
+        <p>length: "long"</p>
+        <a href="http://www.welcometonightvale.com/"> Click here to listen</a>
+        <%= take_quiz_button(@conn) %>
+</div>

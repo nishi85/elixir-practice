@@ -1,0 +1,17 @@
+<div class="wrapper">
+          <!-- seventh question -->
+        <h3>7. A new neighbour just moved in next door to you and they seem awefully suspicious...</h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :finalQuestion), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "comedy") %>
+            <%= label(f, :genre, "You instantly hate your new neighbour and everything they do annoys you.") %>
+            <%= radio_button(f, :genre, "trueCrime") %>
+            <%= label(f, :genre, "You trust your instincts. You start to record when they leave their house and when they come back. You take notice of any of their visitors too. You also periodically go through their trash.") %>
+            <%= radio_button(f, :genre, "horror") %>
+            <%= label(f, :genre, "You wonder why you don't see them during the day and it's quite peculiar that they do not have a reflection.") %>
+            <%= radio_button(f, :genre, "nonFiction") %>
+            <%= label(f, :genre, "You get know your neighbour and it turns out they are very fascinating. You listen to their stories and they inspire you.") %>
+            <%= radio_button(f, :genre, "fiction") %>
+            <%= label(f, :genre, "You find out that your neightbour is a double agent and you somehow get mixed up in their business") %>
+            <%= submit("Make next move") %>
+        <% end) %>
+</div>

@@ -1,0 +1,15 @@
+<div class="wrapper">
+          <!-- seventh question -->
+        <h3>8.How do you get to your favourite restaurant?</h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :recommendation), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "short") %>
+            <%= label(f, :genre, "I walk.") %>
+            <%= radio_button(f, :genre, "medium") %>
+            <%= label(f, :genre, "I drive.") %>
+            <%= radio_button(f, :genre, "long") %>
+            <%= label(f, :genre, "I take public transportation.") %>
+            <%= submit("Answer!") %>
+        <% end) %>
+</div>
+
+

@@ -1,0 +1,9 @@
+<div class="wrapper">
+        <h3>the magnus archives</h3>
+        <p>horror</p>
+        <p> "The Magnus Archives is a fictional podcast by Rusty Quill. In it, Head Archivist Jonathan Sims recites esoteric and possibly supernatural written statements onto tapes before they are investigated by his colleagues, Martin, Sasha and Tim. Sinister plot threads span across the tapes, hinting at underlying malevolence towards the Institute and its members."</p>
+        <p>ongoing: "yes"</p>
+        <p>length: "medium"</p>
+        <a href="http://rustyquill.com/the-magnus-archives/"> Click here to listen</a>
+        <%= take_quiz_button(@conn) %>
+</div>

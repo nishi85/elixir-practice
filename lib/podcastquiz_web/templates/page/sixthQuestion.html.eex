@@ -1,0 +1,17 @@
+<div class="wrapper">
+          <!-- sixth question -->
+        <h3>6. You're on vacation and you are visiting a new city for the first time.</h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :seventhQuestion), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "horror") %>
+            <%= label(f, :genre, "Ask the locals where the creeptiest parts are and go there immediately.") %>
+            <%= radio_button(f, :genre, "comedy") %>
+            <%= label(f, :genre, "You take notice of how different everyone is and how funny it is to you.") %>
+            <%= radio_button(f, :genre, "trueCrime") %>
+            <%= label(f, :genre, "You notice people start to act strange when they talk about the mayor and you want to know why.") %>
+            <%= radio_button(f, :genre, "nonFiction") %>
+            <%= label(f, :genre, "You want to take in all the city has to offer. Experience the food, the culture, and the sites.") %>
+            <%= radio_button(f, :genre, "fiction") %>
+            <%= label(f, :genre, "Ask the locals where the most dangerous parts of the city are and go there immediately.") %>
+            <%= submit("Make next move") %>
+        <% end) %>
+</div>

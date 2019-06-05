@@ -1,0 +1,9 @@
+<div class="wrapper">
+        <h3>99% invisible</h3>
+        <p>non-fiction</p>
+        <p> "99% Invisible is all about the design details we never think about—how people record sound at sporting events, the elements that make McMansions so awful or the placement of missing kids’ pictures on the back of milk cartons. It may sound random, but by the time each episode is over, these explorations illustrate larger truths about the world around us."</p>
+        <p>ongoing: "yes"</p>
+        <p>length: "medium"</p>
+        <a href="https://99percentinvisible.org/"> Click here to listen</a>
+        <%= take_quiz_button(@conn) %>
+</div>

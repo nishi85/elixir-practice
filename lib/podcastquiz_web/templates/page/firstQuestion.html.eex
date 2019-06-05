@@ -1,0 +1,17 @@
+<div class="wrapper">
+          <!-- first question -->
+        <h3>1. You just found out that you failed your English class. How do you react? </h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :secondQuestion), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "horror") %>
+            <%= label(f, :genre, "It's not my fault. My imaginary friend keeps giving me the wrong answers.") %>
+            <%= radio_button(f, :genre, "comedy") %>
+            <%= label(f, :genre, "Me fail English? That's unpossible.") %>
+            <%= radio_button(f, :genre, "trueCrime") %>
+            <%= label(f, :genre, "You blame your teacher and plot your revenge...") %>
+            <%= radio_button(f, :genre, "nonFiction") %>
+            <%= label(f, :genre, "Use this as an lesson to work harder next time.") %>
+            <%= radio_button(f, :genre, "fiction") %>
+            <%= label(f, :genre, "Everything happens for a reason. Summer school will be fun!") %>
+            <%= submit("Make next move") %>
+        <% end) %>
+</div>

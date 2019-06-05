@@ -1,0 +1,18 @@
+<div class="wrapper">
+          <!-- second question -->
+        <h3>3. It's 3AM and you are wide awake. Why? </h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :fourthQuestion), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "fiction") %>
+            <%= label(f, :genre, "Comptemplating getting in your car and just keep driving and see where life takes you.") %>
+            <%= radio_button(f, :genre, "nonFiction") %>
+            <%= label(f, :genre, "How can I sleep when there is so much to do while awake?") %>
+            <%= radio_button(f, :genre, "trueCrime") %>
+            <%= label(f, :genre, "Someone stole your lunch at work and it's up to you to figure out who and why.") %>
+            <%= radio_button(f, :genre, "horror") %>
+            <%= label(f, :genre, "Can't sleep! Clown will Eat me!") %>
+            <%= radio_button(f, :genre, "comedy") %>
+            <%= label(f, :genre, "You finally just got the joke that you heard 12 hours ago.") %>
+            <%= submit("Make next move") %>
+        <% end) %>
+</div>
+

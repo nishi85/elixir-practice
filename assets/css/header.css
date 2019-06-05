@@ -1,0 +1,31 @@
+.quizHeader {
+    display: flex;
+    justify-content: center;
+
+}
+
+.quizHeader  h1 {
+    font-size: 2.25rem;
+    width: 100%;
+}
+
+.quizHeader p {
+    width: 100%;
+    font-size: 1.625rem;
+}
+
+
+/* Portrait tablet and small desktops */
+/* @media (max-width: 940px) {
+} */
+
+/* Landscape phone to portrait tablet */
+/* @media (max-width: 768px) {
+} */
+
+/* Landscape phones and down */
+/* @media (max-width: 480px) {
+    p {
+        @include remCalc(22);
+    }
+} */

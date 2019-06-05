@@ -1,0 +1,17 @@
+<div class="wrapper">
+          <!-- fourth question -->
+        <h3>4. Your waiter brings you the wrong order. What happens next? </h3>
+        <%= form_for(@conn, Routes.page_path(@conn, :fifthQuestion), [ as: :answer ], fn f -> %>
+            <%= radio_button(f, :genre, "horror") %>
+            <%= label(f, :genre, "The waiter assumed you wanted your 'usual', but this is your first time at the restaurant...") %>
+            <%= radio_button(f, :genre, "comedy") %>
+            <%= label(f, :genre, "You inform the waiter of the mistake, but when you tell your friends of the situation, you exagerate the whole event") %>
+            <%= radio_button(f, :genre, "trueCrime") %>
+            <%= label(f, :genre, "You create a scene, because you know it will be the perfect alibi...") %>
+            <%= radio_button(f, :genre, "nonFiction") %>
+            <%= label(f, :genre, "You inform the waiter and ask if they are having a tough day.") %>
+            <%= radio_button(f, :genre, "fiction") %>
+            <%= label(f, :genre, "You do nothing, eat your food, then inform the restuarant of the mistake and letting them that you expect the resatuant to cover the meal") %>
+            <%= submit("Make next move") %>
+        <% end) %>
+</div>
